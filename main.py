@@ -6,7 +6,9 @@ from data_importing import import_data
 def run():
     data=import_data()
     #Version reduce
-    print('La utilidad total es:',str(reduce(lambda x,y:int(x[1])-int(x[2])+int(y[1])-int(y[2]),data)),'COP')
+    ventas=[row[1] for row in data]
+    gastos=[row[2] for row in data]
+    print(reduce(lambda x,y:int(x)+int(y),ventas)-reduce(lambda x,y:int(x)+int(y),gastos))
         
 if __name__=='__main__':
     run()
