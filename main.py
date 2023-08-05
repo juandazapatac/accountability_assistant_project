@@ -1,4 +1,4 @@
-#Asistente de contabilidad de tu empresa
+#ASISTENTE DE CONTABILIDAD EMPRESARIAL
 
 from functools import reduce
 from data_importing import import_data
