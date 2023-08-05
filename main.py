@@ -8,7 +8,7 @@ def run():
     #Version reduce
     ventas=[row[1] for row in data]
     gastos=[row[2] for row in data]
-    print(reduce(lambda x,y:int(x)+int(y),ventas)-reduce(lambda x,y:int(x)+int(y),gastos))
+    print('La utilidad total es',str(reduce(lambda x,y:int(x)+int(y),ventas)-reduce(lambda x,y:int(x)+int(y),gastos)),'COP')
         
 if __name__=='__main__':
     run()
