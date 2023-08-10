@@ -9,6 +9,7 @@ def run():
 1. Utilidades
 2. Ventas
 3. Gastos
+4. Ventas promedio por mes
 :''')
     data=import_data()
     ventas=[int(row[1]) for row in data]
@@ -19,6 +20,8 @@ def run():
         print('Las ventas totales son de',str(reduce(lambda x,y:x+y,ventas)),'COP')
     elif respuesta=='3':
         print('Los gastos totales son de',str(reduce(lambda x,y:x+y,gastos)),'COP')
+    elif respuesta=='4':
+        print('Las ventas promedio por mes son de',str(reduce(lambda x,y:x+y,ventas)/len(ventas)),'COP')
     else:
         print('Error en el valor ingresado')
         
