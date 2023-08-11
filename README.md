@@ -1,6 +1,7 @@
-# Asistente de Contabilidad Empresarial
+# Accountability Assistant
 
-A través de un archivo csv donde se encuentra el registro mes a mes de las ventas y los gastos de tu empresa, este programa puede entregarte algunos insights de interés para tu negocio.
+Through a csv file with the monthly incomes and expenses of a company, this program returns you valuable insights such as the net utility
+or the average monthly income value of the company.
 
 This repo was created during my Git and GitHub Platzi Class.  
 
