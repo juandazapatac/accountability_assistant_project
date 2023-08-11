@@ -1,8 +1,5 @@
-# Accountability Assistant
+# Accounting Assistant
 
-Through a csv file with the monthly incomes and expenses of a company, this program returns you valuable insights such as the net utility
-or the average monthly income value of the company.
+This program helps you to discover valuable insights from your accounting such as your net income, your total revenue, etc. Fork or clone this repo and use your own *accounting.csv* file.
 
-This repo was created during my Git and GitHub Platzi Class.  
-
-***Created by Juan David Zapata Cruz***
+***Created by Juan David Zapata Cruz during his Git and GitHub Platzi Class***

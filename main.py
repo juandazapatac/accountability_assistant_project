@@ -1,29 +1,29 @@
-#ASISTENTE DE CONTABILIDAD EMPRESARIAL
+#Main
 
 from functools import reduce
 from data_importing import import_data
 
 def run():
-    respuesta=input('''Bienvenid@ a tu asistente de contabilidad,          
-¿Qué deseas conocer hoy?
-1. Utilidades
-2. Ventas
-3. Gastos
-4. Ventas promedio por mes
+    respuesta=input('''Welcome to your accounting assistant,          
+What would you like to see from present year?
+1. Net income
+2. Total revenue
+3. Total expense
+4. Average monthly revenue
 :''')
     data=import_data()
     ventas=[int(row[1]) for row in data]
     gastos=[int(row[2]) for row in data]
     if respuesta=='1':
-        print('La utilidad total es',str(reduce(lambda x,y:x+y,ventas)-reduce(lambda x,y:x+y,gastos)),'COP')
+        print('This year net income is',str(reduce(lambda x,y:x+y,ventas)-reduce(lambda x,y:x+y,gastos)),'COP')
     elif respuesta=='2':
-        print('Las ventas totales son de',str(reduce(lambda x,y:x+y,ventas)),'COP')
+        print('This year total revenue is',str(reduce(lambda x,y:x+y,ventas)),'COP')
     elif respuesta=='3':
-        print('Los gastos totales son de',str(reduce(lambda x,y:x+y,gastos)),'COP')
+        print('This year total expense is',str(reduce(lambda x,y:x+y,gastos)),'COP')
     elif respuesta=='4':
-        print('Las ventas promedio por mes son de',str(reduce(lambda x,y:x+y,ventas)/len(ventas)),'COP')
+        print('This year average monthly income is',str(reduce(lambda x,y:x+y,ventas)/len(ventas)),'COP')
     else:
-        print('Error en el valor ingresado')
+        print('Try again')
         
 if __name__=='__main__':
     run()
