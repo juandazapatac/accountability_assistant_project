@@ -10,6 +10,7 @@ What would you like to see from present year?
 2. Total revenue
 3. Total expense
 4. Average monthly revenue
+5. Average monthly expense
 :''')
     data=import_data()
     ventas=[int(row[1]) for row in data]
@@ -22,6 +23,8 @@ What would you like to see from present year?
         print('This year total expense is',str(reduce(lambda x,y:x+y,gastos)),'COP')
     elif respuesta=='4':
         print('This year average monthly income is',str(reduce(lambda x,y:x+y,ventas)/len(ventas)),'COP')
+    elif respuesta=='5':
+        print('This year average monthly expense is',str(reduce(lambda x,y:x+y,gastos)/len(gastos)),'COP')
     else:
         print('Try again')
         
