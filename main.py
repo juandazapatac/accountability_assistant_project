@@ -5,7 +5,7 @@ from data_importing import import_data
 
 def run():
     respuesta=input('''Welcome to your accounting assistant,          
-What would you like to see from present year?
+What would you like to know from present year?
 1. Net income
 2. Total revenue
 3. Total expense
